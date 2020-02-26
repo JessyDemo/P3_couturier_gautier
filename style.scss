@@ -25,21 +25,17 @@ header
 main
 {
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 150px;
 }
 article
 {
-    box-shadow: 0 0 1em grey;
     margin-bottom: 25px;
 }
 img
 {
     width: 600px;
     height: 700px;
-}
-.menu-nav
-{
-    margin-bottom: 25px;
+    box-shadow: 0 0 1em grey;
 }
 aside
 {
@@ -59,6 +55,8 @@ footer
     font-size: 2.5em;
     margin-bottom: 25px;
     height: 100px;
+    position: fixed;
+    bottom: 5px;
 }
 .footers
 {
@@ -72,4 +70,61 @@ footer
 {
     padding-right: 25px;
     text-align: right;
+}
+
+@media all and (min-width: 1024px)
+{
+    header
+    {
+        width: 60%;
+        height: 150px;
+    }
+    .title
+    {
+        margin: auto;
+    }
+    main
+    {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-nav
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    article
+    {
+        margin-right: 25px;
+    }
+    img
+    {
+        width: 400px;
+        height: 500px;
+    }
+    aside
+    {
+        width: 40%;
+        display: flex;
+    }
+    .soon
+    {
+        font-size: 2em;
+    }
+    footer
+    {
+        width: 60%;
+        font-size: 2em;
+    }
+    .legal
+    {
+        margin-left: 25px;
+    }
+    .contact
+    {
+        margin-right: 25px;
+    }
 }
