@@ -1,3 +1,62 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
+.colorandfont {
+  background-color: #579C87;
+  color: #FDCB46;
+  font-family: "Montserrat", sans-serif; }
+
+header {
+  width: 90%;
+  display: flex;
+  justify-content: center; }
+
+.title {
+  font-size: 5em;
+  font-weight: 1000; }
+
+main {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+article {
+  box-shadow: 0 0 1em grey;
+  margin-bottom: 25px; }
+
+img {
+  width: 600px;
+  height: 700px; }
+
+.menu-nav {
+  margin-bottom: 25px; }
+
+aside {
+  display: flex;
+  justify-content: center;
+  border-radius: 30px; }
+
+.soon {
+  font-size: 3em; }
+
+footer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5em;
+  margin-bottom: 25px;
+  height: 100px; }
+
+.footers {
+  margin: auto; }
+
+.legal {
+  padding-left: 25px; }
+
+.contact {
+  padding-right: 25px;
+  text-align: right; }
 
 /*# sourceMappingURL=style.css.map */
