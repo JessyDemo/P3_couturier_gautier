@@ -72,7 +72,7 @@ footer
     text-align: right;
 }
 
-@media all and (min-width: 1024px)
+@media all and (min-width: 1224px)
 {
     header
     {
@@ -85,7 +85,7 @@ footer
     }
     main
     {
-        width: 50%;
+        width: 0%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -93,7 +93,6 @@ footer
     .menu-nav
     {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
     }
     article
@@ -102,12 +101,13 @@ footer
     }
     img
     {
-        width: 400px;
-        height: 500px;
+        width: 300px;
+        height: 400px;
     }
     aside
     {
         width: 40%;
+        min-width: 300px;
         display: flex;
     }
     .soon
