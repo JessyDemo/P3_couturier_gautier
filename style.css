@@ -65,11 +65,30 @@ footer {
 
 .legal {
   padding-left: 25px; }
+  .legal:hover {
+    animation: wiggle 0.5s 2 ease; }
 
 .contact {
   padding-right: 25px;
   text-align: right; }
+  .contact:hover {
+    animation: wiggle 0.5s 2 ease; }
 
+@keyframes wiggle {
+  0% {
+    transform: translate(0px); }
+  10%, 30% {
+    transform: translate(-6px); }
+  20% {
+    transform: translate(-12px); }
+  50% {
+    transform: translate(0px); }
+  60%, 80% {
+    transform: translate(6px); }
+  70% {
+    transform: translate(12px); }
+  100% {
+    transform: translate(0px); } }
 @media all and (min-width: 1224px) {
   header {
     width: 60%;
