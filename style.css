@@ -1,7 +1,6 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center; }
 
 .colorandfont {
@@ -10,17 +9,19 @@ body {
   font-family: "Montserrat", sans-serif; }
 
 header {
+  margin: auto;
   width: 90%;
   display: flex;
   justify-content: center; }
 
 .title {
   font-size: 5em;
-  font-weight: 1000; }
+  font-weight: 900; }
 
 main {
+  margin: auto;
   margin-top: 25px;
-  margin-bottom: 150px; }
+  margin-bottom: 140px; }
 
 article {
   box-shadow: 0 0 1em grey;
@@ -35,23 +36,19 @@ img {
   img:hover {
     animation: zoom 1s forwards; }
 
-@keyframes zoom {
-  0% {
-    transform: scale(1);
-    opacity: 1; }
-  100% {
-    transform: scale(1.5);
-    opacity: 0.75; } }
-aside {
-  display: flex;
-  justify-content: center;
-  border-radius: 30px; }
+.infuture {
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .soon {
-  font-size: 3em; }
+  margin: auto;
+  font-size: 3em;
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 footer {
-  width: 90%;
+  width: 88.5%;
   display: flex;
   justify-content: space-between;
   font-size: 2.5em;
@@ -64,31 +61,16 @@ footer {
   margin: auto; }
 
 .legal {
-  padding-left: 25px; }
+  padding-left: 20px; }
   .legal:hover {
     animation: wiggle 0.5s 2 ease; }
 
 .contact {
-  padding-right: 25px;
+  padding-right: 20px;
   text-align: right; }
   .contact:hover {
     animation: wiggle 0.5s 2 ease; }
 
-@keyframes wiggle {
-  0% {
-    transform: translate(0px); }
-  10%, 30% {
-    transform: translate(-6px); }
-  20% {
-    transform: translate(-12px); }
-  50% {
-    transform: translate(0px); }
-  60%, 80% {
-    transform: translate(6px); }
-  70% {
-    transform: translate(12px); }
-  100% {
-    transform: translate(0px); } }
 @media all and (min-width: 1224px) {
   header {
     width: 60%;
@@ -105,18 +87,25 @@ footer {
 
   .menu-nav {
     display: flex;
-    justify-content: center; }
+    flex-direction: column; }
+
+  .firstline {
+    display: flex; }
+
+  .secondline {
+    display: flex; }
 
   article {
-    margin-right: 25px;
     width: 300px;
-    height: 400px; }
+    height: 400px;
+    margin-left: 12.5px;
+    margin-right: 12.5px; }
 
   img {
     width: 300px;
     height: 400px; }
 
-  aside {
+  .infuture {
     width: 40%;
     min-width: 300px;
     display: flex; }
@@ -125,7 +114,7 @@ footer {
     font-size: 2em; }
 
   footer {
-    width: 60%;
+    width: 59.5%;
     font-size: 2em; }
 
   .legal {
@@ -133,5 +122,27 @@ footer {
 
   .contact {
     margin-right: 25px; } }
+@keyframes wiggle {
+  0% {
+    transform: translate(0px); }
+  10%, 30% {
+    transform: translate(-6px); }
+  20% {
+    transform: translate(-12px); }
+  50% {
+    transform: translate(0px); }
+  60%, 80% {
+    transform: translate(6px); }
+  70% {
+    transform: translate(12px); }
+  100% {
+    transform: translate(0px); } }
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  100% {
+    transform: scale(1.5);
+    opacity: 0.75; } }
 
 /*# sourceMappingURL=style.css.map */
