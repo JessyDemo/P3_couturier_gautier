@@ -89,10 +89,15 @@ footer {
     animation: wiggle 0.5s 2 ease; }
 
 .contact {
+  text-decoration: underline;
   padding-right: 20px;
   text-align: right; }
   .contact:hover {
     animation: wiggle 0.5s 2 ease; }
+
+a:link {
+  color: #FDCB46;
+  text-decoration: none; }
 
 @media all and (min-width: 1224px) {
   header {

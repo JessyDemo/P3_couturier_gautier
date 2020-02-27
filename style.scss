@@ -113,11 +113,17 @@ footer                                                  /*footer*/
 }
 .contact
 {
+    text-decoration: underline;
     padding-right: 20px;
     text-align: right;
     &:hover{
         animation: wiggle 0.5s 2 ease;
     }
+}
+a:link
+{
+    color: #FDCB46;
+    text-decoration: none;
 }
 
 @media all and (min-width: 1224px)                  /*media queries*/
