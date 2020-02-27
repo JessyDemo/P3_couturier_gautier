@@ -4,13 +4,13 @@ body
     flex-direction: column;
     align-items: center;
 }
-.colorandfont
+.colorandfont                                           /*Couleur background et police*/
 {
     background-color: #579C87;
     color: #FDCB46;
     font-family: 'Montserrat', sans-serif ;
 }
-header
+header                                                  /*header*/
 {
     margin: auto;
     width: 90%;
@@ -22,7 +22,7 @@ header
     font-size: 5em;
     font-weight: 900;
 }
-main
+main                                                    /*menus*/
 {
     margin: auto;
     margin-top: 25px;
@@ -44,7 +44,7 @@ img
         animation: zoom 1s forwards;
     }
 }
-.infuture
+.infuture                                              /*Prochainement*/
 {
     border-radius: 10px;
     padding-left: 20px;
@@ -57,7 +57,39 @@ img
     padding-top: 10px;
     padding-bottom: 10px;
 }
-footer
+.infuture
+{
+    display: flex;
+    justify-content: space-between;
+    &:hover{
+        &>.circles .circle-1{
+            animation: shortly 2s infinite ease-in-out;
+        }
+        &>.circles .circle-2{
+            animation: shortly 2s infinite 0.6s ease-in-out;
+        }
+        &>.circles .circle-3{
+            animation: shortly 2s infinite 1.2s ease-in-out;
+        }
+
+    }
+}
+.circles
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+.circle
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+footer                                                  /*footer*/
 {
     width: 88.5%;
     display: flex;
@@ -88,7 +120,7 @@ footer
     }
 }
 
-@media all and (min-width: 1224px)
+@media all and (min-width: 1224px)                  /*media queries*/
 {
     header
     {
@@ -155,8 +187,8 @@ footer
         margin-right: 25px;
     }
 }
-
-@keyframes wiggle
+                                                /*Animations wiggle*/
+@keyframes wiggle                                   
 {
     0%{
         transform: translate(0px);
@@ -180,7 +212,8 @@ footer
      transform: translate(0px);
     }
 }
-@keyframes zoom
+                                            /*Animation zoom + fondu*/
+@keyframes zoom             
 {
     0%{
         transform: scale(1);
@@ -188,6 +221,26 @@ footer
     }
     100%{
         transform: scale(1.5);
-        opacity: 0.75;
+        opacity: 0.6;
     }
+}
+@keyframes shortly
+{
+    5%{
+        opacity: 0.5;
+        background-color:#294A40;
+    }
+    16%{
+        background-color: #294A40;
+        opacity: 1;
+    }
+    33%{
+        opacity: 0.5;
+        background-color: #294A40;
+    }
+    100%{
+        opacity: 0.25;
+        background-color: #294A40;
+    }
+    
 }

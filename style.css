@@ -47,6 +47,29 @@ img {
   padding-top: 10px;
   padding-bottom: 10px; }
 
+.infuture {
+  display: flex;
+  justify-content: space-between; }
+  .infuture:hover > .circles .circle-1 {
+    animation: shortly 2s infinite ease-in-out; }
+  .infuture:hover > .circles .circle-2 {
+    animation: shortly 2s infinite 0.6s ease-in-out; }
+  .infuture:hover > .circles .circle-3 {
+    animation: shortly 2s infinite 1.2s ease-in-out; }
+
+.circles {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 5px; }
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-bottom: 10px; }
+
 footer {
   width: 88.5%;
   display: flex;
@@ -122,6 +145,7 @@ footer {
 
   .contact {
     margin-right: 25px; } }
+/*Animations wiggle*/
 @keyframes wiggle {
   0% {
     transform: translate(0px); }
@@ -137,12 +161,26 @@ footer {
     transform: translate(12px); }
   100% {
     transform: translate(0px); } }
+/*Animation zoom + fondu*/
 @keyframes zoom {
   0% {
     transform: scale(1);
     opacity: 1; }
   100% {
     transform: scale(1.5);
-    opacity: 0.75; } }
+    opacity: 0.6; } }
+@keyframes shortly {
+  5% {
+    opacity: 0.5;
+    background-color: #294A40; }
+  16% {
+    background-color: #294A40;
+    opacity: 1; }
+  33% {
+    opacity: 0.5;
+    background-color: #294A40; }
+  100% {
+    opacity: 0.25;
+    background-color: #294A40; } }
 
 /*# sourceMappingURL=style.css.map */
