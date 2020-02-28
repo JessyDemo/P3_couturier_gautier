@@ -1,0 +1,138 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.colorandfont {
+  background-color: #579C87;
+  color: #FDCB46;
+  font-family: "Montserrat", sans-serif; }
+
+main {
+  max-width: 80%; }
+
+header {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: center; }
+
+.title {
+  font-size: 4em;
+  font-weight: 900; }
+
+.icon-title {
+  height: 110px;
+  width: 110px; }
+
+.head {
+  font-family: 'Devonshire', sans-serif;
+  text-align: center; }
+
+section {
+  color: #3D1319;
+  font-size: 2em;
+  background-color: #FCDFDB;
+  padding: 60px;
+  margin-bottom: 140px;
+  margin-top: 25px; }
+
+.name-menu {
+  font-size: 2.5em;
+  margin-top: -50px; }
+
+.name-menu-aside {
+  font-size: 2em;
+  margin-left: 25px; }
+
+.icon-aside {
+  width: 60px;
+  height: 60px; }
+
+article {
+  font-family: "Caveat";
+  margin-bottom: 50px; }
+
+article h3 {
+  text-align: center; }
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -50px; }
+
+.price {
+  font-weight: bold; }
+
+aside {
+  font-family: 'Devonshire', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+footer {
+  width: 88.5%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5em;
+  margin-bottom: 25px;
+  height: 100px;
+  position: fixed;
+  bottom: 5px; }
+
+.footers {
+  margin: auto; }
+
+.legal {
+  padding-left: 20px; }
+  .legal:hover {
+    animation: wiggle 0.5s 2 ease; }
+
+.contact {
+  text-decoration: underline;
+  padding-right: 20px;
+  text-align: right; }
+  .contact:hover {
+    animation: wiggle 0.5s 2 ease; }
+
+a:link {
+  color: #FDCB46;
+  text-decoration: none; }
+
+@media all and (min-width: 1224px) {
+  header {
+    width: 60%;
+    height: 150px; }
+
+  main {
+    max-width: 55%; }
+
+  .title {
+    margin: auto; }
+
+  footer {
+    width: 59.5%;
+    font-size: 2em; }
+
+  .legal {
+    margin-left: 25px; }
+
+  .contact {
+    margin-right: 25px; } }
+@keyframes wiggle {
+  0% {
+    transform: translate(0px); }
+  10%, 30% {
+    transform: translate(-6px); }
+  20% {
+    transform: translate(-12px); }
+  50% {
+    transform: translate(0px); }
+  60%, 80% {
+    transform: translate(6px); }
+  70% {
+    transform: translate(12px); }
+  100% {
+    transform: translate(0px); } }
+
+/*# sourceMappingURL=style.css.map */
