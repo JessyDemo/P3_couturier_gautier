@@ -3,21 +3,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0; }
+  margin-top: 0; }
 
 header {
   background-color: #579C87;
   color: #FDCB46;
   font-family: "Montserrat", sans-serif;
   width: 100%;
+  font-size: 3em;
   height: 150px;
-  text-align: center;
   display: flex; }
 
 .title {
-  margin: auto;
-  font-size: 5em;
-  font-weight: 900; }
+  margin: auto; }
 
 footer {
   background-color: #579C87;
@@ -39,14 +37,42 @@ footer {
   padding-left: 20px; }
   .legal:hover {
     animation: wiggle 0.5s 2 ease; }
-
+@keyframes wiggle {
+  0% {
+    transform: translate(0px); }
+  10%, 30% {
+    transform: translate(-6px); }
+  20% {
+    transform: translate(-12px); }
+  50% {
+    transform: translate(0px); }
+  60%, 80% {
+    transform: translate(6px); }
+  70% {
+    transform: translate(12px); }
+  100% {
+    transform: translate(0px); } }
 .contact {
   text-decoration: underline;
   padding-right: 20px;
   text-align: right; }
   .contact:hover {
     animation: wiggle 0.5s 2 ease; }
-
+@keyframes wiggle {
+  0% {
+    transform: translate(0px); }
+  10%, 30% {
+    transform: translate(-6px); }
+  20% {
+    transform: translate(-12px); }
+  50% {
+    transform: translate(0px); }
+  60%, 80% {
+    transform: translate(6px); }
+  70% {
+    transform: translate(12px); }
+  100% {
+    transform: translate(0px); } }
 a:link {
   color: #FDCB46;
   text-decoration: none; }

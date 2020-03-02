@@ -16,21 +16,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0;
+        margin-top:0;
     }                                     
     header
     {
         @include colors;
         width: 100%;
+        font-size: 3em;
         height: 150px;
-        text-align: center;
         display: flex;
     }
     .title
     {
         margin: auto;
-        font-size: 5em;
-        font-weight: 900;
     }
     footer
     {
@@ -51,18 +49,14 @@
     .legal
     {
         padding-left: 20px;
-        &:hover{
-            animation: wiggle 0.5s 2 ease;
-        }
+        @include shake;
     }
     .contact
     {
         text-decoration: underline;
         padding-right: 20px;
-        text-align: right;
-        &:hover{
-            animation: wiggle 0.5s 2 ease;
-        }
+        text-align: right; 
+        @include shake;  
     }
     a:link
     {
