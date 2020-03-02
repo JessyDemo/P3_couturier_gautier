@@ -1,64 +1,147 @@
 @import "../mixin/_global.scss";
 
 
-@include headerfooter
+@include headerfooter;
 
-/*
-main
+.menu-nav
+{
+    display:grid;
+    grid-template-columns: auto;
+    margin-top: 25px;
+}
+.grid-item
+{
+    width:300px;
+    height: 400px;
+    box-shadow: 0 0 1em grey;
+    margin: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.name
 {
     margin: auto;
-    margin-top: 25px;
-    margin-bottom: 140px;
 }
-ul
+.menu
 {
-    display: flex;
+    margin: auto;
 }
-li
+
+
+.item1                                          /*MENU 1*/
 {
-    box-shadow: 0 0 1em grey;
-    width: 500px;
-    height: 700px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    text-align: center;
+    background-color:#FCDFDB;
+    @include zoom;
 }
-img
+.icon-1
 {
-    max-width: 100%;
-    &:hover{
-        animation: zoom 1s forwards;
-    }
+    margin-top: 40%;
+    height: 55px;
+    width: 55px;
 }
-.infuture                                              
+.name1
+{
+    margin-top: 0px;
+    font-family: 'Devonshire', sans-serif;
+    color: #3D1319;
+    font-size: 2em;
+}
+.menu1
+{
+    font-family: 'Sriracha', sans-serif ;
+    color: #3D1319;
+    font-size: 2em;
+    margin-bottom: 40%;
+}
+
+.item2                                      /*MENU 2*/
+{
+    height: 100%;
+    background-color:#FFF5FE;
+    @include zoom;
+}
+.name2
+{
+    margin-top: 50%;
+    font-family: 'Lobster', sans-serif;
+    font-size: 1.5em;
+    background: linear-gradient(to right,#C77412,#8F5AFF );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu2
+{
+    margin-top: 10%;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #C77412;
+}
+
+.item3                                      /*MENU 3*/
+{
+    height: 100%;
+    background-color:#F9F9F9;
+    @include zoom;
+}
+.name3
+{
+    margin-top: 50%;
+    font-family: 'Dancing Script', sans-serif ;
+    font-size: 1.8em;
+    background: linear-gradient(to right,#0023DB, #0887FB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu3
+{
+    font-family: 'Caveat', sans-serif;
+    font-size: 2.5em;
+    margin-top: 10%;
+    color:#0887FB;
+}
+
+.item4                                         /*MENU 4*/
+{
+    height: 100%;
+    @include zoom;  
+}
+.name4
+{
+    margin-top: 50%;
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 1.8em;
+    background: linear-gradient(to right,#3E923A,#BEFF7F );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu4
+{
+    font-family: 'Caveat', sans-serif;
+    font-size: 2.5em;
+    margin-top: 10%;
+    color:#72BF56;
+}
+
+.infuture                                              /*SHORTLY*/
 {
     border-radius: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: #579C87;
+    color: #FDCB46;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 125px;
+    @include shortly;
 }
 .soon
 {
     margin: auto;
-    font-size: 3em;
+    font-size: 1.5em;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-.infuture
-{
-    display: flex;
-    justify-content: space-between;
-    &:hover{
-        &>.circles .circle-1{
-            animation: shortly 2s infinite ease-in-out;
-        }
-        &>.circles .circle-2{
-            animation: shortly 2s infinite 0.6s ease-in-out;
-        }
-        &>.circles .circle-3{
-            animation: shortly 2s infinite 1.2s ease-in-out;
-        }
-
-    }
 }
 .circles
 {
@@ -75,6 +158,3 @@ img
     margin-left: 10px;
     margin-bottom: 10px;
 }
-*/
-
-
