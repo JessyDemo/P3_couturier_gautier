@@ -98,11 +98,27 @@ main {
   height: 110px;
   width: 110px; }
 
+.title {
+  display: flex;
+  justify-content: space-between; }
+
+.feature1 {
+  margin: auto;
+  width: 30%;
+  height: 40px;
+  margin-left: 0; }
+
+.feature2 {
+  margin: auto;
+  width: 30%;
+  height: 40px;
+  margin-right: 0; }
+
 .head {
   font-family: 'Devonshire', sans-serif;
   text-align: center; }
 
-section {
+.section {
   color: #3D1319;
   font-size: 2em;
   background-color: #FCDFDB;
@@ -126,9 +142,6 @@ article {
   font-family: "Caveat";
   margin-bottom: 50px; }
 
-article h3 {
-  text-align: center; }
-
 .line {
   display: flex;
   justify-content: space-between;
@@ -142,5 +155,60 @@ aside {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.article1 h3 {
+  position: relative; }
+.article1 h3:hover::before {
+  animation: underline1 1s forwards ease-in-out; }
+.article1 h3::before {
+  content: "";
+  width: 0;
+  height: 5px;
+  bottom: -5px;
+  left: -10%;
+  background-color: #3D1319;
+  position: absolute; }
+@keyframes underline1 {
+  from {
+    width: 0; }
+  to {
+    width: 6.5ch; } }
+.article2 h3 {
+  position: relative; }
+.article2 h3:hover::before {
+  animation: underline2 1s forwards ease-in-out; }
+.article2 h3::before {
+  content: "";
+  width: 0;
+  height: 5px;
+  bottom: -5px;
+  left: -10%;
+  background-color: #3D1319;
+  position: absolute; }
+@keyframes underline2 {
+  from {
+    width: 0; }
+  to {
+    width: 11.5ch; } }
+.article3 h3 {
+  position: relative; }
+.article3 h3:hover::before {
+  animation: underline3 1s forwards ease-in-out; }
+.article3 h3::before {
+  content: "";
+  width: 0;
+  height: 5px;
+  bottom: -5px;
+  left: -10%;
+  background-color: #3D1319;
+  position: absolute; }
+@keyframes underline3 {
+  from {
+    width: 0; }
+  to {
+    width: 14ch; } }
+@media all and (min-width: 1225px) {
+  main {
+    max-width: 55%; } }
 
 /*# sourceMappingURL=style.css.map */

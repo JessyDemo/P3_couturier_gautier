@@ -83,3 +83,83 @@
         }   
     }
 }
+
+@mixin underline-a1{
+    h3
+    {
+        position: relative;
+    }
+    h3:hover::before{
+        animation: underline1 1s forwards ease-in-out;
+    }
+    h3::before{
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: -5px;
+        left: -10%;
+        background-color:#3D1319;
+        position: absolute;
+    }
+ @keyframes underline1{
+        from{
+            width:0
+        }
+        to{
+            width:6.5ch
+        }}
+}
+
+
+@mixin underline-a2{
+    h3
+    {
+        position: relative;
+    }
+    h3:hover::before{
+        animation: underline2 1s forwards ease-in-out;
+    }
+    h3::before{
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: -5px;
+        left: -10%;
+        background-color:#3D1319;
+        position: absolute;
+    }
+ @keyframes underline2{
+        from{
+            width:0
+        }
+        to{
+            width:11.5ch
+        }}
+}
+
+@mixin underline-a3{
+    h3
+    {
+        position: relative;
+    }
+    h3:hover::before{
+        animation: underline3 1s forwards ease-in-out;
+    }
+    h3::before{
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: -5px;
+        left: -10%;
+        background-color:#3D1319;
+        position: absolute;
+    }
+ @keyframes underline3{
+        from{
+            width:0
+        }
+        to{
+            width:14ch
+        }
+    }
+}

@@ -23,3 +23,14 @@
 
     }
 }
+
+@mixin mediapage1
+{
+    @media all and (min-width: 1225px)
+    {
+        main
+        {
+            max-width: 55%;
+        }
+    }
+}

@@ -26,12 +26,32 @@ main
     height: 110px;
     width: 110px;
 }
+.title
+{
+    display: flex;
+    justify-content: space-between;
+}
+@mixin center{
+    margin:auto;
+    width:30%;
+    height: 40px;
+}
+.feature1
+{
+    @include center;
+    margin-left:0;
+}
+.feature2
+{
+    @include center;
+    margin-right: 0;
+}
 .head
 {
     font-family: 'Devonshire', sans-serif;
     text-align: center;
 }
-section
+.section
 {
     color:#3D1319;
     font-size: 2em;
@@ -60,10 +80,6 @@ article
     font-family: 'Caveat', ;
     margin-bottom: 50px;
 }
-article h3
-{
-    text-align: center;
-}
 .line
 {
     display: flex;
@@ -81,3 +97,16 @@ aside
     align-items: center;
     justify-content: center;
 }
+.article1
+{
+    @include underline-a1
+}
+.article2
+{
+    @include underline-a2
+}
+.article3
+{
+    @include underline-a3
+}
+@include mediapage1
