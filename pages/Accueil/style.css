@@ -1,38 +1,4 @@
 /*background and color*/
-@media all and (min-width: 1224px) {
-  main {
-    width: 0%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-
-  .menu-nav {
-    display: flex;
-    flex-direction: column; }
-
-  .firstline {
-    display: flex; }
-
-  .secondline {
-    display: flex; }
-
-  article {
-    width: 300px;
-    height: 400px;
-    margin-left: 12.5px;
-    margin-right: 12.5px; }
-
-  img {
-    width: 300px;
-    height: 400px; }
-
-  .infuture {
-    width: 40%;
-    min-width: 300px;
-    display: flex; }
-
-  .soon {
-    font-size: 2em; } }
 body {
   display: flex;
   flex-direction: column;
@@ -134,6 +100,7 @@ a:link {
   margin: auto; }
 
 .item1 {
+  height: 100%;
   background-color: #FCDFDB; }
   .item1:hover {
     animation: zoom 1s forwards; }
@@ -241,11 +208,14 @@ a:link {
 
 .infuture {
   border-radius: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: #579C87;
   color: #FDCB46;
   font-family: 'Montserrat', sans-serif;
+  display: flex;
+  height: 50px;
+  font-size: 1.2em;
+  width: 80%;
+  margin: auto;
   margin-bottom: 125px; }
   .infuture:hover > .circles .circle-1 {
     animation: shortly 2s infinite ease-in-out; }
@@ -267,22 +237,32 @@ a:link {
     opacity: 0.25;
     background-color: #294A40; } }
 .soon {
-  margin: auto;
-  font-size: 1.5em;
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  margin: auto; }
 
 .circles {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-bottom: 5px; }
+  margin: auto;
+  margin-left: -20px;
+  display: flex; }
 
 .circle {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-left: 10px;
-  margin-bottom: 10px; }
+  margin-left: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; }
+
+@media all and (min-width: 1225px) {
+  .menu-nav {
+    display: grid;
+    grid-template-columns: auto auto; }
+
+  .grid-item {
+    width: 400px;
+    height: 500px; }
+
+  .name1 {
+    margin-top: 15px; }
+
+  .infuture {
+    width: 50%; } }
 
 /*# sourceMappingURL=style.css.map */
