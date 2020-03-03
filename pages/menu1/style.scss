@@ -1,30 +1,25 @@
+@import "../mixin/_global.scss";
+
+@include headerfooter;
+
 body
 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.colorandfont                                           /*Couleur background et police*/
-{
-    background-color: #579C87;
-    color: #FDCB46;
-    font-family: 'Montserrat', sans-serif ;
-}
 main
 {
-    max-width: 80%;
+    max-width: 90%;
 }
-header                                                  /*header*/
+.menu1
 {
-    margin: auto;
-    width: 90%;
-    display: flex;
-    justify-content: center;  
-}
-.title
-{
-    font-size: 4em;
-    font-weight: 900;
+    text-align: center;
+    font-size: 2.2em;
+    font-family: 'Sriracha', sans-serif ;
+    color:#353535;
+    font-weight: bold;
+    margin-top: 45px;
 }
 .icon-title
 {
@@ -85,94 +80,4 @@ aside
     display: flex;
     align-items: center;
     justify-content: center;
-}
-footer                                                  /*footer*/
-{
-    width: 88.5%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 2.5em;
-    margin-bottom: 25px;
-    height: 100px;
-    position: fixed;
-    bottom: 5px;
-}
-.footers
-{
-    margin: auto;   
-}
-.legal
-{
-    padding-left: 20px;
-    &:hover{
-        animation: wiggle 0.5s 2 ease;
-    }
-}
-.contact
-{
-    text-decoration: underline;
-    padding-right: 20px;
-    text-align: right;
-    &:hover{
-        animation: wiggle 0.5s 2 ease;
-    }
-}
-a:link
-{
-    color: #FDCB46;
-    text-decoration: none;
-}
-
-@media all and (min-width: 1224px)                  /*media queries*/
-{
-    header
-    {
-        width: 60%;
-        height: 150px;
-    }
-    main
-    {
-    max-width: 55%;
-    }
-    .title
-    {
-        margin: auto;
-    }
-    footer
-    {
-        width: 59.5%;
-        font-size: 2em;
-    }
-    .legal
-    {
-        margin-left: 25px;
-    }
-    .contact
-    {
-        margin-right: 25px;
-    }
-}
-@keyframes wiggle                                   
-{
-    0%{
-        transform: translate(0px);
-    }
-    10%, 30%{
-        transform: translate(-6px);
-    }
-    20%{
-        transform: translate(-12px);
-    }
-    50%{
-     transform: translate(0px);
-    }
-    60%, 80%{
-        transform: translate(6px);
-    }
-    70%{
-        transform: translate(12px);
-    }
-    100%{
-     transform: translate(0px);
-    }
 }
