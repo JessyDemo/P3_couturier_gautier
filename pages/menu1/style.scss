@@ -21,16 +21,76 @@ main
     font-weight: bold;
     margin-top: 45px;
 }
+.icon
+{
+    padding-top: 5px;
+}
 .icon-title
 {
-    height: 110px;
-    width: 110px;
+    height: 80px;
+    width: 80px;
 }
 .title
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
+
+.head
+{
+    font-family: 'Devonshire', sans-serif;
+    text-align: center;
+}
+.section
+{
+    color:#3D1319;
+    font-size: 1.7em;
+    background-color: #FCDFDB;
+    margin-bottom: 140px;
+    margin-top: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.name-menu
+{
+    font-size: 2em;
+    margin-top: -50px;
+}
+article
+{
+    font-family: 'Caveat', sans-serif ;
+    margin-bottom: 50px;
+}
+.line
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.price
+{
+    font-weight: bold;
+}
+
+aside
+{
+    font-family: 'Devonshire', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-aside
+{
+    width: 45px;
+    height: 45px;
+}
+.name-menu-aside
+{
+    margin-left: 25px;
+    font-size: 1.7em;
+    text-align: center;
+}
+
 @mixin center{
     margin:auto;
     width:30%;
@@ -46,67 +106,8 @@ main
     @include center;
     margin-right: 0;
 }
-.head
-{
-    font-family: 'Devonshire', sans-serif;
-    text-align: center;
-}
-.section
-{
-    color:#3D1319;
-    font-size: 2em;
-    background-color: #FCDFDB;
-    padding: 60px;
-    margin-bottom: 140px;
-    margin-top: 25px;
-}
-.name-menu
-{
-    font-size: 2.5em;
-    margin-top: -50px;
-}
-.name-menu-aside
-{
-    font-size: 2em;
-    margin-left: 25px;
-}
-.icon-aside
-{
-    width: 60px;
-    height: 60px;
-}
-article
-{
-    font-family: 'Caveat', ;
-    margin-bottom: 50px;
-}
-.line
-{
-    display: flex;
-    justify-content: space-between;
-    margin-top: -50px;
-}
-.price
-{
-    font-weight: bold;
-}
-aside
-{
-    font-family: 'Devonshire', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.article1
-{
-    @include underline-a1
-}
-.article2
-{
-    @include underline-a2
-}
-.article3
-{
-    @include underline-a3
-}
-@include mediapage1
+@include mediapage1;
+
+@include underline-a1;
+@include underline-a2;
+@include underline-a3;

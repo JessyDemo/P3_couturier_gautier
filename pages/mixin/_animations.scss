@@ -85,20 +85,21 @@
 }
 
 @mixin underline-a1{
-    h3
+    .h3-1
     {
         position: relative;
     }
-    h3:hover::before{
+    .h3-1:hover::before{
         animation: underline1 1s forwards ease-in-out;
     }
-    h3::before{
+    .h3-1::before{
         content: "";
         width: 0;
         height: 5px;
         bottom: -5px;
         left: -10%;
         background-color:#3D1319;
+        border-radius: 20px;
         position: absolute;
     }
  @keyframes underline1{
@@ -107,25 +108,27 @@
         }
         to{
             width:6.5ch
-        }}
+        }
+    }
 }
 
 
 @mixin underline-a2{
-    h3
+    .h3-2
     {
         position: relative;
     }
-    h3:hover::before{
+    .h3-2:hover::before{
         animation: underline2 1s forwards ease-in-out;
     }
-    h3::before{
+    .h3-2::before{
         content: "";
         width: 0;
         height: 5px;
         bottom: -5px;
         left: -10%;
         background-color:#3D1319;
+        border-radius: 20px;
         position: absolute;
     }
  @keyframes underline2{
@@ -133,25 +136,27 @@
             width:0
         }
         to{
-            width:11.5ch
-        }}
+            width:11ch
+        }
+    }
 }
 
 @mixin underline-a3{
-    h3
+    .h3-3
     {
         position: relative;
     }
-    h3:hover::before{
+    .h3-3:hover::before{
         animation: underline3 1s forwards ease-in-out;
     }
-    h3::before{
+    .h3-3::before{
         content: "";
         width: 0;
         height: 5px;
         bottom: -5px;
         left: -10%;
         background-color:#3D1319;
+        border-radius: 20px;
         position: absolute;
     }
  @keyframes underline3{

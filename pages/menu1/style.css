@@ -94,13 +94,60 @@ main {
   font-weight: bold;
   margin-top: 45px; }
 
+.icon {
+  padding-top: 5px; }
+
 .icon-title {
-  height: 110px;
-  width: 110px; }
+  height: 80px;
+  width: 80px; }
 
 .title {
   display: flex;
-  justify-content: space-between; }
+  justify-content: center; }
+
+.head {
+  font-family: 'Devonshire', sans-serif;
+  text-align: center; }
+
+.section {
+  color: #3D1319;
+  font-size: 1.7em;
+  background-color: #FCDFDB;
+  margin-bottom: 140px;
+  margin-top: 25px;
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.name-menu {
+  font-size: 2em;
+  margin-top: -50px; }
+
+article {
+  font-family: "Caveat", sans-serif;
+  margin-bottom: 50px; }
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+.price {
+  font-weight: bold; }
+
+aside {
+  font-family: 'Devonshire', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.icon-aside {
+  width: 45px;
+  height: 45px; }
+
+.name-menu-aside {
+  margin-left: 25px;
+  font-size: 1.7em;
+  text-align: center; }
 
 .feature1 {
   margin: auto;
@@ -114,101 +161,77 @@ main {
   height: 40px;
   margin-right: 0; }
 
-.head {
-  font-family: 'Devonshire', sans-serif;
-  text-align: center; }
+@media all and (max-width: 1225px) {
+  .feature1 {
+    display: none; }
 
-.section {
-  color: #3D1319;
-  font-size: 2em;
-  background-color: #FCDFDB;
-  padding: 60px;
-  margin-bottom: 140px;
-  margin-top: 25px; }
-
-.name-menu {
-  font-size: 2.5em;
-  margin-top: -50px; }
-
-.name-menu-aside {
-  font-size: 2em;
-  margin-left: 25px; }
-
-.icon-aside {
-  width: 60px;
-  height: 60px; }
-
-article {
-  font-family: "Caveat";
-  margin-bottom: 50px; }
-
-.line {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -50px; }
-
-.price {
-  font-weight: bold; }
-
-aside {
-  font-family: 'Devonshire', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.article1 h3 {
+  .feature2 {
+    display: none; } }
+@media all and (min-width: 1225px) {
+  main {
+    width: 50%; } }
+.h3-1 {
   position: relative; }
-.article1 h3:hover::before {
+
+.h3-1:hover::before {
   animation: underline1 1s forwards ease-in-out; }
-.article1 h3::before {
+
+.h3-1::before {
   content: "";
   width: 0;
   height: 5px;
   bottom: -5px;
   left: -10%;
   background-color: #3D1319;
+  border-radius: 20px;
   position: absolute; }
+
 @keyframes underline1 {
   from {
     width: 0; }
   to {
     width: 6.5ch; } }
-.article2 h3 {
+.h3-2 {
   position: relative; }
-.article2 h3:hover::before {
+
+.h3-2:hover::before {
   animation: underline2 1s forwards ease-in-out; }
-.article2 h3::before {
+
+.h3-2::before {
   content: "";
   width: 0;
   height: 5px;
   bottom: -5px;
   left: -10%;
   background-color: #3D1319;
+  border-radius: 20px;
   position: absolute; }
+
 @keyframes underline2 {
   from {
     width: 0; }
   to {
-    width: 11.5ch; } }
-.article3 h3 {
+    width: 11ch; } }
+.h3-3 {
   position: relative; }
-.article3 h3:hover::before {
+
+.h3-3:hover::before {
   animation: underline3 1s forwards ease-in-out; }
-.article3 h3::before {
+
+.h3-3::before {
   content: "";
   width: 0;
   height: 5px;
   bottom: -5px;
   left: -10%;
   background-color: #3D1319;
+  border-radius: 20px;
   position: absolute; }
+
 @keyframes underline3 {
   from {
     width: 0; }
   to {
     width: 14ch; } }
-@media all and (min-width: 1225px) {
-  main {
-    max-width: 55%; } }
 
 /*# sourceMappingURL=style.css.map */

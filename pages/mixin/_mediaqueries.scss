@@ -26,11 +26,22 @@
 
 @mixin mediapage1
 {
+    @media all and (max-width: 1225px)
+    {
+        .feature1
+        {
+            display: none;
+        }
+        .feature2
+        {
+            display: none;
+        }
+    }
     @media all and (min-width: 1225px)
     {
         main
         {
-            max-width: 55%;
+            width: 50%;
         }
     }
 }
