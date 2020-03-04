@@ -98,7 +98,7 @@ main {
   font-family: "Montserrat", sans-serif;
   color: #353535;
   font-weight: bold;
-  margin-top: 25px; }
+  padding: 20px; }
 
 .title {
   display: flex;
@@ -129,6 +129,7 @@ h3 {
   color: #6E4CCC; }
 
 .name-menu {
+  padding: 35px;
   font-family: "Lobster", sans-serif;
   font-size: 2em;
   margin-top: -50px;
