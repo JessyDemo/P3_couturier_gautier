@@ -45,3 +45,21 @@
         }
     }
 }
+
+@mixin mediapage2
+{
+    @media all and (max-width: 1225px)
+    {
+        .feature1, .feature2, .feature3, .feature4, .feature5, .feature6
+        {
+            display: none;
+        }
+    }
+    @media all and (min-width: 1225px)
+    {
+        main
+        {
+            width: 50%;
+        }
+    }
+}
