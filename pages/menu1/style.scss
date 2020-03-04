@@ -8,6 +8,11 @@ body
     flex-direction: column;
     align-items: center;
 }
+.title
+    {
+        text-decoration: none;
+        color: #FDCB46;
+    }
 main
 {
     max-width: 90%;
@@ -40,6 +45,10 @@ main
 {
     font-family: 'Devonshire', sans-serif;
     text-align: center;
+}
+h3
+{
+    color:#3D1319;
 }
 .section
 {
