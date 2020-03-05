@@ -161,6 +161,10 @@ article {
   height: 40px;
   margin-right: 0; }
 
+.legal {
+  text-decoration: none;
+  color: #FDCB46; }
+
 @media all and (max-width: 1225px) {
   .feature1, .feature2, .feature3, .feature4, .feature5, .feature6 {
     display: none; } }

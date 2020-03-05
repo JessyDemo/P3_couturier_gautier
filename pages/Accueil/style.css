@@ -1,4 +1,6 @@
 /*background and color*/
+/*UNDERLINE PAGE1*/
+/*UNDERLINE PAGE2*/
 body {
   display: flex;
   flex-direction: column;
@@ -249,6 +251,10 @@ a:link {
   width: 15px;
   height: 15px;
   border-radius: 50%; }
+
+.legal {
+  text-decoration: none;
+  color: #FDCB46; }
 
 @media all and (min-width: 1225px) {
   .menu-nav {

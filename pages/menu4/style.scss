@@ -88,6 +88,11 @@ article
     @include center;
     margin-right: 0;
 }
+.legal
+{
+    text-decoration: none;
+    color: #FDCB46;
+}
 @include mediapage2;
 @include underline-d1;
 @include underline-d2;

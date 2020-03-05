@@ -1,4 +1,6 @@
 /*background and color*/
+/*UNDERLINE PAGE1*/
+/*UNDERLINE PAGE2*/
 body {
   display: flex;
   flex-direction: column;
@@ -155,6 +157,10 @@ aside {
   margin-left: 25px;
   font-size: 1.7em;
   text-align: center; }
+
+.legal {
+  text-decoration: none;
+  color: #FDCB46; }
 
 .feature1 {
   margin: auto;
