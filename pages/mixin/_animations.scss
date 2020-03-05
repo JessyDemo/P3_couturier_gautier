@@ -332,3 +332,86 @@
         }
     }
 }
+
+@mixin underline-d1{                /*ANIMATIONS PAGE4*/
+    .h3-1
+    {
+        position: relative;
+    }
+    .h3-1:hover::before{
+        animation: underlined1 1s forwards ease-in-out;
+    }
+    .h3-1::before{
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: -5px;
+        left: -5%;
+        background-color:#7FC860;
+        border-radius: 20px;
+        position: absolute;
+    }
+ @keyframes underlined1{
+        from{
+            width:0
+        }
+        to{
+            width:7ch
+        }
+    }
+}
+@mixin underline-d2{
+    .h3-2
+    {
+        position: relative;
+    }
+    .h3-2:hover::before{
+        animation: underlined2 1s forwards ease-in-out;
+    }
+    .h3-2::before{
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: -5px;
+        left: -5%;
+        background-color:#7FC860;
+        border-radius: 20px;
+        position: absolute;
+    }
+ @keyframes underlined2{
+        from{
+            width:0
+        }
+        to{
+            width:13.5ch
+        }
+    }
+}
+@mixin underline-d3{
+    .h3-3
+    {
+        position: relative;
+    }
+    .h3-3:hover::before{
+        animation: underlined3 1s forwards ease-in-out;
+    }
+    .h3-3::before{
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: -5px;
+        left: -5%;
+        background-color:#7FC860;
+        border-radius: 20px;
+        position: absolute;
+    }
+ @keyframes underlined3{
+        from{
+            width:0
+        }
+        to{
+            width:15ch
+        }
+    }
+}
+
