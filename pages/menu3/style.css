@@ -1,0 +1,225 @@
+/*background and color*/
+/*UNDERLINE PAGE1*/
+/*UNDERLINE PAGE2*/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0; }
+
+header {
+  background-color: #579C87;
+  color: #FDCB46;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  font-size: 3em;
+  font-weight: bold;
+  height: 150px;
+  display: flex; }
+
+.title {
+  margin: auto; }
+
+footer {
+  background-color: #579C87;
+  color: #FDCB46;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  margin-bottom: 25px;
+  height: 75px;
+  position: fixed;
+  bottom: 5px; }
+
+.footers {
+  margin: auto; }
+
+.legal {
+  padding-left: 20px; }
+  .legal:hover {
+    animation: wiggle 0.5s 2 ease; }
+@keyframes wiggle {
+  0% {
+    transform: translate(0px); }
+  10%, 30% {
+    transform: translate(-6px); }
+  20% {
+    transform: translate(-12px); }
+  50% {
+    transform: translate(0px); }
+  60%, 80% {
+    transform: translate(6px); }
+  70% {
+    transform: translate(12px); }
+  100% {
+    transform: translate(0px); } }
+.contact {
+  text-decoration: underline;
+  padding-right: 20px;
+  text-align: right; }
+  .contact:hover {
+    animation: wiggle 0.5s 2 ease; }
+@keyframes wiggle {
+  0% {
+    transform: translate(0px); }
+  10%, 30% {
+    transform: translate(-6px); }
+  20% {
+    transform: translate(-12px); }
+  50% {
+    transform: translate(0px); }
+  60%, 80% {
+    transform: translate(6px); }
+  70% {
+    transform: translate(12px); }
+  100% {
+    transform: translate(0px); } }
+a:link {
+  color: #FDCB46;
+  text-decoration: none; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.title {
+  text-decoration: none;
+  color: #FDCB46;
+  display: flex;
+  justify-content: center; }
+
+main {
+  max-width: 90%; }
+
+.menu1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: "Montserrat", sans-serif;
+  color: #353535;
+  font-weight: bold;
+  padding: 20px; }
+
+.title1, .title2, .title3 {
+  display: flex;
+  justify-content: center;
+  color: #0A0A0A;
+  font-size: 1.5em; }
+
+.head {
+  text-align: center; }
+
+.section {
+  font-size: 1.3em;
+  background-color: #EDEFEF;
+  margin-bottom: 140px;
+  margin-top: 60px;
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.name-menu {
+  padding: 35px;
+  font-family: "Dancing script", sans-serif;
+  font-size: 2em;
+  margin-top: -50px;
+  background: linear-gradient(to right, #0228DD, #229DF9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+article {
+  font-family: "Caveat", sans-serif;
+  margin-bottom: 50px; }
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+.price {
+  font-weight: bold; }
+
+.feature1, .feature3, .feature5 {
+  margin: auto;
+  width: 30%;
+  height: 40px;
+  margin-left: 0; }
+
+.feature2, .feature4, .feature6 {
+  margin: auto;
+  width: 30%;
+  height: 40px;
+  margin-right: 0; }
+
+@media all and (max-width: 1225px) {
+  .feature1, .feature2, .feature3, .feature4, .feature5, .feature6 {
+    display: none; } }
+@media all and (min-width: 1225px) {
+  main {
+    width: 50%; } }
+.h3-1 {
+  position: relative; }
+
+.h3-1:hover::before {
+  animation: underlinec1 1s forwards ease-in-out; }
+
+.h3-1::before {
+  content: "";
+  width: 0;
+  height: 5px;
+  bottom: -5px;
+  left: -2%;
+  background-color: #0228DD;
+  border-radius: 20px;
+  position: absolute; }
+
+@keyframes underlinec1 {
+  from {
+    width: 0; }
+  to {
+    width: 16.5ch; } }
+.h3-2 {
+  position: relative; }
+
+.h3-2:hover::before {
+  animation: underlinec2 1s forwards ease-in-out; }
+
+.h3-2::before {
+  content: "";
+  width: 0;
+  height: 5px;
+  bottom: -5px;
+  left: -2%;
+  background-color: #0670F3;
+  border-radius: 20px;
+  position: absolute; }
+
+@keyframes underlinec2 {
+  from {
+    width: 0; }
+  to {
+    width: 15.5ch; } }
+.h3-3 {
+  position: relative; }
+
+.h3-3:hover::before {
+  animation: underlinec3 1s forwards ease-in-out; }
+
+.h3-3::before {
+  content: "";
+  width: 0;
+  height: 5px;
+  bottom: -5px;
+  left: -2%;
+  background-color: #229DF9;
+  border-radius: 20px;
+  position: absolute; }
+
+@keyframes underlinec3 {
+  from {
+    width: 0; }
+  to {
+    width: 15ch; } }
+
+/*# sourceMappingURL=style.css.map */

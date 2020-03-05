@@ -250,3 +250,85 @@
         }
     }
 }
+
+@mixin underline-c1{                /*UNDERLINE PAGE3*/
+    .h3-1
+    {
+        position: relative;
+    }
+    .h3-1:hover::before{
+        animation: underlinec1 1s forwards ease-in-out;
+    }
+    .h3-1::before{
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: -5px;
+        left: -2%;
+        background-color:#0228DD;
+        border-radius: 20px;
+        position: absolute;
+    }
+ @keyframes underlinec1{
+        from{
+            width:0
+        }
+        to{
+            width:16.5ch
+        }
+    }
+}
+@mixin underline-c2{
+    .h3-2
+    {
+        position: relative;
+    }
+    .h3-2:hover::before{
+        animation: underlinec2 1s forwards ease-in-out;
+    }
+    .h3-2::before{
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: -5px;
+        left: -2%;
+        background-color:#0670F3;
+        border-radius: 20px;
+        position: absolute;
+    }
+ @keyframes underlinec2{
+        from{
+            width:0
+        }
+        to{
+            width:15.5ch
+        }
+    }
+}
+@mixin underline-c3{
+    .h3-3
+    {
+        position: relative;
+    }
+    .h3-3:hover::before{
+        animation: underlinec3 1s forwards ease-in-out;
+    }
+    .h3-3::before{
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: -5px;
+        left: -2%;
+        background-color:#229DF9;
+        border-radius: 20px;
+        position: absolute;
+    }
+ @keyframes underlinec3{
+        from{
+            width:0
+        }
+        to{
+            width:15ch
+        }
+    }
+}

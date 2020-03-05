@@ -1,0 +1,96 @@
+@import "../mixin/_global.scss";
+
+@include headerfooter;
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title
+{
+    text-decoration: none;
+    color: #FDCB46;
+    display: flex;
+    justify-content: center;
+}
+main
+{
+    max-width: 90%;
+}
+.menu1
+{
+    text-align: center;
+    font-size: 1.8em;
+    font-family: 'Montserrat', sans-serif ;
+    color:#353535;
+    font-weight: bold;
+    padding: 20px;
+}
+.title1, .title2, .title3
+{
+    display: flex;
+    justify-content: center;
+    color:#0A0A0A;
+    font-size: 1.5em;
+}
+
+.head
+{
+    text-align: center;
+}
+.section
+{
+    font-size: 1.3em;
+    background-color: #EDEFEF;
+    margin-bottom: 140px;
+    margin-top: 60px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.name-menu
+{
+    padding: 35px;
+    font-family: 'Dancing script', sans-serif ;
+    font-size: 2em;
+    margin-top: -50px;
+    background: linear-gradient(to right,#0228DD,#229DF9 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+article
+{
+    font-family: 'Caveat', sans-serif ;
+    margin-bottom: 50px;
+}
+.line
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.price
+{
+    font-weight: bold;
+}
+
+@mixin center{
+    margin:auto;
+    width:30%;
+    height: 40px;
+}
+.feature1, .feature3, .feature5
+{
+    @include center;
+    margin-left:0;
+}
+.feature2, .feature4, .feature6
+{
+    @include center;
+    margin-right: 0;
+}
+
+@include mediapage2;
+@include underline-c1;
+@include underline-c2;
+@include underline-c3;
